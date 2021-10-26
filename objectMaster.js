@@ -62,7 +62,6 @@ const pokémon = Object.freeze([
     console.log(flyingSecondTypes);
 
     // a count of the number of pokémon that are "normal" type
-    let count = 0;
-    const numOfNorms = pokémon.filter( p => p.types.includes("normal")).map( count => count++ );
-    console.log("Number of pokemon that are 'normal' type: ");
-    console.log(numOfNorms);
+    const numOfNorms = pokémon.filter( p => p.types.includes("normal"));
+    console.log("The number of pokemon that are normal types:")
+    console.log(numOfNorms.length);
